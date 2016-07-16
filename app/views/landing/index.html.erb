@@ -1,0 +1,5 @@
+<h1>Planomatic Syndications!</h1>
+
+<% Syndication.all.pluck(:name).uniq.each do |name| %>
+    <p><%= link_to name, "syndications/#{name}" %></p>
+<% end %>

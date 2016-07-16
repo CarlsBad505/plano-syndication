@@ -54,3 +54,5 @@ Syndication.create(name: 'tour_slides_descriptions.txt', body: "
   poc_wpm|3319784|13|http://photoplan-cache.planomatic.com/tourFiles/18796/photocache/642033.jpg|Fenced Backyard\n
   poc_wpm|3319784|14|http://photoplan-cache.planomatic.com/tourFiles/18796/photocache/642028.jpg|Another Front View
 ")
+
+puts "Seeds Finished!"

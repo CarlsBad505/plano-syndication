@@ -8,6 +8,15 @@
 </head>
 <body>
 
+<div class="flash">
+    <% if flash[:error] %>
+        <div class="alert alert-danger alert-dismissible flash-position">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <%= flash[:error] %>
+        </div>
+    <% end %>
+</div>
+
 <%= yield %>
 
 </body>
