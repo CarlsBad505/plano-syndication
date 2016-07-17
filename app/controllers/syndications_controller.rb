@@ -7,6 +7,8 @@ class SyndicationsController < ApplicationController
             type: 'text/plain',
             filename: @syndicate.name, 
             disposition: 'attachment'
+        else
+            render file: "#{Rails.root}/public/404", layout: false, status: :not_found
         end
     end
     
